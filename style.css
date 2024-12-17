@@ -10,37 +10,41 @@ body {
   height: 100vh;
 }
 
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
 p {
   font-size: 1.25rem;
   font-weight: 500;
-  line-height: 2rem;
-  margin-bottom: 16px;
-  strong {
-    color: hsl(160deg, 100%, 30%);
-  }
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
 .max-width-wrapper {
   max-width: 800px;
   margin-inline: auto;
+  padding-inline: 24px;
 }
 
 header {
   border-bottom: 8px solid hsl(0deg, 0%, 60%);
 
   .intro-chunk {
-    padding-inline: 24px;
-    max-width: 500px;
+    max-width: 415px;
     padding-block-start: 96px;
-    padding-block-end: 48px;
-    .title {
-      font-size: 2rem;
-      line-height: 2.25rem;
-      font-weight: 800;
-      margin-bottom: 48px;
-    }
-    p {
-      font-weight: 400;
-    }
+    padding-block-end: 64px;
   }
 }
 
@@ -53,15 +57,14 @@ main {
 .card {
   background-color: hsl(0deg, 0%, 100%);
   border-bottom: 8px solid hsl(0deg, 0%, 60%);
-  padding-inline: 24px;
-  padding-block: 8px;
+  padding: 24px;
+  margin-inline: -24px;
   .indented-heading {
     margin-inline-start: -32px;
     padding: 16px 32px;
     width: fit-content;
     font-size: 1.5rem;
-    line-height: 1.75rem;
-    font-weight: 800;
+    line-height: 1.2;
     margin-block: 0;
     background-color: hsl(45deg, 100%, 50%);
     border-bottom: 8px solid hsl(45deg, 100%, 40%);
